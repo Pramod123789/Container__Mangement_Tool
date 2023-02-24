@@ -10,7 +10,7 @@ const DockerGUIHeader = () => {
             sx={{
                 p: 3, display: 'grid', gridRowGap: 15,
                 gridAutoFlow: 'column dense', overflow: 'auto',
-                gridTemplateRows: 'repeat(4, 45px [row-start])',
+                gridTemplateRows: 'repeat(5, 45px [row-start])',
                 gridTemplateColumns: 'repeat(6, 250px [col-start])',
                 backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#121212' : '#f1f1f1'
             }}
@@ -41,7 +41,10 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="Podman help" cmd="podman help" />
             <ButtonNormal text="podman system info" cmd="podman info" />
             <ButtonNormal text="Remove all pods" cmd="podman pod rm -fa" />
-            <ButtonNormal text="Resource stats of a pod" cmd="podman pod stats -a --no-stream" />
+            
+            <ButtonNormal text="Resource stats of all pods" cmd="podman pod stats --no-stream" />
+            <ButtonWithSingleInput text="Resource stats of a specific pod" label="pod name" cmd="podman pod stats --no-stream " />
+
 
 
 
@@ -53,6 +56,10 @@ const DockerGUIHeader = () => {
             <ButtonWithSingleInput text="Inspect pod" label="pod name" cmd="podman pod inspect " />
             <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
             <ButtonWithSingleInput text="Remove a specific Pod" label="name of pod" cmd="podman pod rm -f " />
+            <ButtonWithSingleInput text="Start a pod" label="pod name" cmd="podman pod start " />
+            
+
+
 
 
 
