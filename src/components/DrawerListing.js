@@ -54,7 +54,7 @@ const DrawerListing = () => {
                         <ListItemIcon>
                             <SvgIcon component={PodC} inheritViewBox></SvgIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Docker" />
+                        <ListItemText primary="Podman/Docker" />
                         { open2 ? <ArrowDropDown /> : <ArrowRight /> }
                     </ListItemButton>
                     <DockerCollapse isOn={open2} />
@@ -115,7 +115,7 @@ const DockerCollapse = (props) => {
                     <ListItemIcon>
                         <SvgIcon component={Termi} inheritViewBox></SvgIcon>
                     </ListItemIcon>
-                    <ListItemText primary="Docker CLI" />
+                    <ListItemText primary="Podman/Docker CLI" />
                 </ListItemButton>
                 <Divider sx={{ marginLeft: 5 }} />
 
@@ -123,7 +123,7 @@ const DockerCollapse = (props) => {
                     <ListItemIcon>
                         <SvgIcon component={GuiClick} inheritViewBox></SvgIcon>
                     </ListItemIcon>
-                    <ListItemText primary="Docker GUI" />
+                    <ListItemText primary="Podman/Docker GUI" />
                 </ListItemButton>
                 <Divider sx={{ marginLeft: 5 }} />
 
