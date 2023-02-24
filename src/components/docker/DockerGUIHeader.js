@@ -20,6 +20,8 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="List stopped containers" cmd="echo ... " />
             <ButtonNormal text="List images" cmd="podman images" />
             <ButtonNormal text="List networks" cmd="podman network ls" />
+            <ButtonNormal text="List pods" cmd="podman pod list" />
+
             
             <ButtonWithSingleInput text="Show container log" label="Container id/name" cmd="podman logs " />
             <ButtonWithSingleInput text="Pull docker image" label="Image name" cmd="podman pull " />
