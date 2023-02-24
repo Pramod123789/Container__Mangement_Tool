@@ -41,6 +41,8 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="Podman help" cmd="podman help" />
             <ButtonNormal text="podman system info" cmd="podman info" />
             <ButtonNormal text="Remove all pods" cmd="podman pod rm -fa" />
+            <ButtonNormal text="Resource stats of a pod" cmd="podman pod stats -a --no-stream" />
+
 
 
 
