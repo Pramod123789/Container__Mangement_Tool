@@ -34,6 +34,11 @@ const DockerGUIHeader = () => {
             <ButtonWithTwoInput text="Run container" label1="Container name"  label2="Image name"  />
             <ButtonWithSingleInput text="Remove container" label="Container id/name" cmd="podman rm " />
             <ButtonWithSingleInput text="Inspect container" label="Container id/name" cmd="podman inspect " />
+           
+            <ButtonWithSingleInput text="Inspect pod" label="pod name" cmd="podman pod inspect " />
+            <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
+
+
         </Box>
     )
 }
