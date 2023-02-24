@@ -59,7 +59,11 @@ const DockerGUIHeader = () => {
             <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
             <ButtonWithSingleInput text="Remove a specific Pod" label="pod_name/id" cmd="podman pod rm -f " />
             <ButtonWithSingleInput text="Start a pod" label="pod_name/id" cmd="podman pod start " />
-            <ButtonWithSingleInput text="Stop pod" label="pod_name/id" cmd="podman pod stop " />
+            <ButtonWithSingleInput text="Stop a specific pod" label="pod_name/id" cmd="podman pod stop " />
+
+            <ButtonNormal text="Stop all pods" cmd="podman pod stop --all" />
+
+
 
 
 
