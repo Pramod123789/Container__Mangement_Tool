@@ -39,12 +39,15 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="List pods" cmd="podman pod list" />
             <ButtonNormal text="check podman version" cmd="podman version" />
             <ButtonNormal text="Podman help" cmd="podman help" />
+            <ButtonNormal text="podman relate system info" cmd="podman info" />
+
 
 
 
 
             <ButtonWithSingleInput text="Inspect pod" label="pod name" cmd="podman pod inspect " />
             <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
+
 
 
         </Box>
