@@ -38,6 +38,8 @@ const DockerGUIHeader = () => {
            
             <ButtonNormal text="List pods" cmd="podman pod list" />
             <ButtonNormal text="check podman version" cmd="podman version" />
+            <ButtonNormal text="Podman help" cmd="podman help" />
+
 
 
 
