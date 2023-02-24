@@ -39,7 +39,10 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="List pods" cmd="podman pod list" />
             <ButtonNormal text="check podman version" cmd="podman version" />
             <ButtonNormal text="Podman help" cmd="podman help" />
-            <ButtonNormal text="podman relate system info" cmd="podman info" />
+            <ButtonNormal text="podman system info" cmd="podman info" />
+            <ButtonNormal text="Remove all pods" cmd="podman pod rm -fa" />
+
+
 
 
 
@@ -47,6 +50,9 @@ const DockerGUIHeader = () => {
 
             <ButtonWithSingleInput text="Inspect pod" label="pod name" cmd="podman pod inspect " />
             <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
+            <ButtonWithSingleInput text="Remove a specific Pod" label="name of pod" cmd="podman pod rm -f " />
+
+
 
 
 
