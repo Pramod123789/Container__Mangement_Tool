@@ -10,8 +10,8 @@ const DockerGUIHeader = () => {
             sx={{
                 p: 3, display: 'grid', gridRowGap: 15,
                 gridAutoFlow: 'column dense', overflow: 'auto',
-                gridTemplateRows: 'repeat(3, 45px [row-start])',
-                gridTemplateColumns: 'repeat(5, 250px [col-start])',
+                gridTemplateRows: 'repeat(4, 45px [row-start])',
+                gridTemplateColumns: 'repeat(6, 250px [col-start])',
                 backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#121212' : '#f1f1f1'
             }}
         >
@@ -20,7 +20,8 @@ const DockerGUIHeader = () => {
             <ButtonNormal text="List stopped containers" cmd="echo ... " />
             <ButtonNormal text="List images" cmd="podman images" />
             <ButtonNormal text="List networks" cmd="podman network ls" />
-            <ButtonNormal text="List pods" cmd="podman pod list" />
+          
+            
 
             
             <ButtonWithSingleInput text="Show container log" label="Container id/name" cmd="podman logs " />
@@ -35,6 +36,11 @@ const DockerGUIHeader = () => {
             <ButtonWithSingleInput text="Remove container" label="Container id/name" cmd="podman rm " />
             <ButtonWithSingleInput text="Inspect container" label="Container id/name" cmd="podman inspect " />
            
+            <ButtonNormal text="List pods" cmd="podman pod list" />
+            <ButtonNormal text="check podman version" cmd="podman version" />
+
+
+
             <ButtonWithSingleInput text="Inspect pod" label="pod name" cmd="podman pod inspect " />
             <ButtonWithSingleInput text="Create pod" label="name of pod" cmd="podman pod create --name " />
 
